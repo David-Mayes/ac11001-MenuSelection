@@ -1,0 +1,39 @@
+
+/**
+ * Write a description of class Photographer here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Photographer extends Competitor
+{
+    private String category;
+    private String comment;
+    
+    public Photographer(){
+        super();
+        category = "N/A";
+        comment = "None";
+    }
+    
+    public String getCategory(){
+        return category;
+    }
+    
+    public String getComment(){
+        return comment;
+    }
+    
+    public void setValues(String category, String comment){
+        this.category = category;
+        this.comment = comment;
+    }
+     /**
+     * Displays details of this competitor
+     */
+    public void display(){
+        super.display();
+        System.out.println("Category: " + category);
+        System.out.println("Comments: " + comment);
+    }
+}

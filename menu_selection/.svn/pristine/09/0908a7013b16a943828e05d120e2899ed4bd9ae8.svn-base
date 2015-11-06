@@ -1,0 +1,31 @@
+
+/**
+ * Write a description of class Gymnast here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Gymnast extends Competitor
+{
+    private String country;
+    private double score;
+    
+    public Gymnast(){
+        super();
+        country = "N/A";
+        score = 0.0;
+    }
+    
+    public String getCountry(){
+        return country;
+    }
+    
+    public double getScore(){
+        return score;
+    }
+    
+    public void setValues(String country, double score){
+        this.country = country;
+        this.score = score;
+    }
+}

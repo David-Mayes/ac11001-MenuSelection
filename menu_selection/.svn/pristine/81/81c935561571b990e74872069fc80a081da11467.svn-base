@@ -1,0 +1,54 @@
+
+/**
+ * Write a description of class DavidTester here.
+ * 
+ * @author David 
+ * @version (a version number or a date)
+ */
+public class DavidTester
+{
+    /**
+     * Constructor for objects of class DavidTester
+     */
+    public DavidTester()
+    {
+      
+    }
+
+    /**
+     * 
+     * 
+     * @param  y   
+     * @return     
+     */
+    public void testChildClass()
+    {
+        Photographer photographer1;
+        photographer1 = new Photographer();
+        String theirFirstName;
+        String theirSurname;
+        String theirAddress;
+        String theirCity;
+        String theirPostcode;
+        String category;
+        String comment;
+        System.out.println("Please enter data for the competitor");
+        System.out.print("First name: ");
+        theirFirstName = Genio.getString();
+        System.out.print("Surname: ");
+        theirSurname = Genio.getString();
+        System.out.print("Address: ");
+        theirAddress = Genio.getString();
+        System.out.print("City: ");
+        theirCity = Genio.getString();
+        System.out.print("Postcode: ");
+        theirPostcode = Genio.getString();
+        System.out.print("Category: ");
+        category = Genio.getString();
+        System.out.print("Comments: ");
+        comment = Genio.getString();
+        photographer1.setValues(category, comment);
+        photographer1.setName(theirFirstName, theirSurname);
+        photographer1.setAddress(theirAddress, theirCity, theirPostcode);
+    }
+}

@@ -1,0 +1,114 @@
+
+/**
+ * Holds information for a competitor who may take part in a variety of competitions
+ * 
+ * @author C. Ramsay
+ * @version 1.0
+ */
+public class Competitor
+{
+   private String firstName;   // their first name
+   private String surname;      // their surname / family name
+   private String address;      // their address, city and postcode
+   private String city;         
+   private String postCode;
+
+    /**
+     * Default constructor. Initialise Competitor fields
+     */
+    public Competitor()
+    {
+       surname = "";
+       firstName = "";
+       address = "";
+       city = "";
+       postCode = "";
+    }
+    
+    /**
+     * Gets the surname of the competitor
+     * 
+     * @return The competitor's surname
+     */
+    public String getSurname()
+    {
+        return surname;
+    }
+    
+    /**
+     * Gets the first name of the competitor
+     * 
+     * @return The competitor's first name
+     */
+    public String getFirstName()
+    {
+        return firstName;
+    }
+    
+    /**
+     * Gets the address of the competitor
+     * 
+     * @return The competitor's address
+     */
+    public String getAddress()
+    {
+        return address;
+    }
+    
+    /**
+     * Gets the city of the competitor
+     * 
+     * @return The competitor's city
+     */
+    public String getCity()
+    {
+        return city;
+    }
+    
+    /**
+     * Gets the post code of the competitor
+     * 
+     * @return The competitor's post code
+     */
+    public String getPostCode()
+    {
+        return postCode;
+    }
+    
+    /**
+     * Set the name of the competitor (firstname and surname)
+     * 
+     * @param theirFirstName Their first name
+     * @param theirSurname Their surname
+     */
+    public void setName(String theirFirstName, String theirSurname)
+    {
+        firstName = theirFirstName;
+        surname = theirSurname;
+    }
+    
+    /**
+     * Set the name of the competitor
+     * 
+     * @param theirAddress Their street address
+     * @param theirCity Their city
+     * @param theirPostcode Their post code
+     */
+    public void setAddress(String theirAddress, String theirCity, String theirPostcode)
+    {
+        address = theirAddress;
+        city = theirCity;
+        postCode = theirPostcode;
+    }
+    
+    /**
+     * Displays details of this competitor
+     */
+    public void display()
+    {
+        System.out.println("Competitor information");
+        System.out.println("======================");
+        System.out.println("Name: " + firstName + " " + surname);
+        System.out.println("Address: " + address + ", " + city + ", " + postCode);
+    }
+}

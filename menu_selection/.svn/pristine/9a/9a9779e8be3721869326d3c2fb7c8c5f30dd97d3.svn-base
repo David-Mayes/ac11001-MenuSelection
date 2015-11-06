@@ -1,0 +1,28 @@
+
+/**
+ * Write a description of class EwanTester here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class EwanTester
+{
+    public EwanTester(){
+        
+    }
+    
+    public void testChildClass(){
+        Gymnast gymnast1 = new Gymnast();
+        System.out.println("Please enter all the required information about the Gymnast.");
+        System.out.println("-------------------------------------------------------");
+        System.out.println("Please enter the Gymnast's country.");
+        String newCountry = Genio.getString();
+        System.out.println("Please enter the Gymnast's score.");
+        Double newScore = Genio.getDouble();
+        
+        gymnast1.setValues(newCountry, newScore);
+        System.out.println("score: " + gymnast1.getScore());
+    }
+    
+    
+}
